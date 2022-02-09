@@ -1,0 +1,21 @@
+version: 2.1
+
+jobs:
+  build-and-test:
+    docker:
+      - image: circleci/python:3.9.2
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          command: pip install poetry
+          name: setup
+      - run:
+          command: make
+          name: install
+      - run:
+          command: make check
+          name: check
+      - run:
+          command: make test
+          name: test

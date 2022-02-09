@@ -1,0 +1,4 @@
+.sell:hover{background-color:orange;}
+.sell:focus{background-color:red;}
+.buy:hover{background-color:cyan;}
+.buy:focus{background-color:green;}

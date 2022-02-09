@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>StockWizard</title>
+	<link rel="stylesheet" href="../static/assets/fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="../static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/css/templatemo-xtra-blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table {
+            width: 900px;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);}
+        th, td {
+            padding: 15px;
+            background-color: rgba(255,255,255,0.2);
+            color: #fff;}
+        th{background-color: #55608f;text-align: left;}
+        td {
+            background-color: #acafbd;
+        }
+
+
+    </style>
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mx-auto" style="text-align: center;"><img src="../static/assets/img/logo.png" alt="Image"  class="img-fluid"></div>            
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="/info" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Stock Information
+                    </a></li>                    <li class="tm-nav-item"><a href="/post" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Portfolio Performance
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/adviceToUser" class="tm-nav-link">
+                        <i class="fa fa-bar-chart"></i>
+                        Portfolio Advice
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/advice" class="tm-nav-link">
+                        <i class="fa fa-bar-chart"></i>
+                        General Advice
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/about" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Us
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/contact" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a href="https://facebook.com" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+        
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <!-- <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>   -->
+            <p class ="advice">In the stock market, moving averages are used to calculate the average price of a stock for the given number of days. MA10 can be translated into "Average price of the stock in the last 10 days. Moving averages are compared with each other to find out the average price of the given stock in different intervals. If a stock has a higher average in the last day than it has in the last 25 days, it can be said that the stock has had an uptrend in the last 10 days. This would give a buy signal. In the below tables, "Buy" and "Sell" signals are given by comparing each of MA10,
+                 MA25, MA50, and MA100 to MA200. While MA10 and 
+                MA25 give signals for a shorter time frame, MA50 and MA100 give for longer time frames.</p>
+            <div class="row tm-row tm-mb-5">
+                <div class="col-12">
+                    <h2 class="tm-color-primary tm-post-title tm-mb-5">XU</h2>
+                </div>                
+            </div>      
+            <div class="row tm-row tm-mb-20">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>                
+            </div>
+            <div> <!--row tm-row tm-mb-35-->
+                <div class="col-12">
+                    <table class="XU">
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>MA 10</th>
+                                <th>MA 25</th>
+                                <th>MA 50</th>
+                                <th>MA 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-20">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>                
+            </div>
+            <div class="row tm-row tm-mb-5">
+                <div class="col-12">
+                    <h2 class="tm-color-primary tm-post-title tm-mb-5">NASDAQ</h2>
+                </div>                
+            </div>      
+            <div class="row tm-row tm-mb-20">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>                
+            </div>
+            <div> <!--row tm-row tm-mb-35-->
+                <div class="col-12">
+                    <table class="NASDAQ">
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>MA 10</th>
+                                <th>MA 25</th>
+                                <th>MA 50</th>
+                                <th>MA 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-20">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>                
+            </div>
+            <div class="row tm-row tm-mb-5">
+                <div class="col-12">
+                    <h2 class="tm-color-primary tm-post-title tm-mb-5">CRYPTOS</h2>
+                </div>                
+            </div>      
+            <div class="row tm-row tm-mb-20">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>                
+            </div>
+            <div > <!--row tm-row tm-mb-35-->
+                <div class="col-12">
+                    <table class="CRYPTOS">
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>MA 10</th>
+                                <th>MA 25</th>
+                                <th>MA 50</th>
+                                <th>MA 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-20">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>                
+            </div>
+            <div class="row tm-row tm-mb-5">
+                <div class="col-12">
+                    <h2 class="tm-color-primary tm-post-title tm-mb-5">PAIRS</h2>
+                </div>                
+            </div>      
+            <div class="row tm-row tm-mb-20">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                </div>                
+            </div>
+            <div > <!--row tm-row tm-mb-35-->
+                <div class="col-12">
+                    <table class="PAIRS">
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>MA 10</th>
+                                <th>MA 25</th>
+                                <th>MA 50</th>
+                                <th>MA 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>                    
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2021 Portfolio Management Platform. This site is built for the BLG439E course at ITU, investment advice should not be taken seriously.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="../static/assets/js/jquery.min.js"></script>
+    <script src="../static/assets/js/templatemo-script.js"></script>
+</body>
+</html>

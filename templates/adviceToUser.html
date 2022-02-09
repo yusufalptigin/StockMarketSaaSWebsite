@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>StockWizard</title>
+	<link rel="stylesheet" href="../static/assets/fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="../static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/css/templatemo-xtra-blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table {
+            width: 900px;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);}
+        th, td {
+            padding: 15px;
+            background-color: rgba(255,255,255,0.2);
+            color: #fff;}
+        th{background-color: #55608f;text-align: left;}
+        td {
+            background-color: #acafbd;
+        }
+
+
+    </style>
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mx-auto" style="text-align: center;"><img src="../static/assets/img/logo.png" alt="Image"  class="img-fluid"></div>            
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                     <li class="tm-nav-item"><a href="/info" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Stock Information
+                    </a></li>                    <li class="tm-nav-item"><a href="/post" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Portfolio Performance
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/adviceToUser" class="tm-nav-link">
+                        <i class="fa fa-bar-chart"></i>
+                        Portfolio Advice
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/advice" class="tm-nav-link">
+                        <i class="fa fa-bar-chart"></i>
+                        General Advice
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/about" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Us
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/contact" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a href="https://facebook.com" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+        
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+        <p style="color: black;"> <b>Monthly best</b>, average and worst performing stocks are calculated based on the stocks previous performance in the month. Each stocks performance daily on the given month is calculated and each stock is compared with each other 
+            using median and standard deviation parameters.
+            <br>
+            <b>Best stocks</b> are the ones with the highest positive deviation from the mean while <b>the worst stocks</b> are the ones with the highest negative deviation.
+            <b>Average stocks</b> are stocks that haven't deviated much from the mean. These stocks should be bought/sold at the start of the month to be sealed at the end of the month.
+            <br>
+            <b>Daily best stock</b> are calculated in a similar manner as the monthly best stocks but instead of using the monthly data,
+            the data of the specific days that have occurred from the past are taken into account.
+            For example: If tomorrow the eight of December and it is a Thursday, the stocks performance on the previous accounts
+            it had on the eight of December and on the Thursdays of December are calculated. These data are then compared to
+            each other to find the highest positive deviations from the mean of the stocks. These stock are then chosen
+            as the best stocks to buy at the start of that day to sell at the end of that day.</p>            
+            <div class="user-table-main-header"></div>
+                <div class="user-table-header">
+                    <div class="column header"></div>
+                    <div class="column header"></div>
+                    <div class="column header"></div>
+                    <div class="column header"></div>
+                </div>
+
+            <div class="user-table-body">
+                <div class="column">
+                    <div class="column-item"></div>
+                </div>
+                <div class="column">
+                    <div class="column-item"></div>
+                </div>
+                <div class="column">
+                    <div class="column-item"></div>
+                </div>
+                <div class="column">
+                    <div class="column-item"></div>
+                </div>
+            </div>
+            
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2021 Portfolio Management Platform. This site is built for the BLG439E course at ITU, investment advice should not be taken seriously.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="../static/assets/js/jquery.min.js"></script>
+    <script src="../static/assets/js/templatemo-script.js"></script>
+</body>
+</html>
